@@ -1,0 +1,135 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+
+.card_buttons {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.card_buttons > button {
+    margin: 0 0.1em 0 0.1rem;
+}
+
+button {
+    all: unset;
+    box-sizing: border-box;
+    border: 2px solid black;
+    border-radius: 0.4rem;
+}
+
+.delete:hover {
+    border: 2px solid red;
+}
+
+button:hover {
+    border-color: goldenrod;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: aliceblue;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+    padding: 1rem;
+    border: solid 1px blue;
+}
+
+h1 {
+    font-size: 32px;
+}
+
+main {
+    flex-grow: 1;
+    margin: 1rem;
+    padding: 1rem;
+    border: solid 1px red;
+}
+
+#count_section {
+    display: flex;
+    padding: 1rem;
+    border: dotted 1px orange;
+}
+
+#card_section {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0.5rem;
+    /* border: dotted 1px purple; */
+}
+
+.card {
+    flex-basis: 12rem;
+    padding: 1.2rem 2rem 1.2rem 2rem;
+    margin: 0.8rem;
+    border: solid 2px black;
+    border-radius: 0.4rem;
+}
+
+.favorite {
+    border: solid 2px goldenrod;
+}
+
+.card_image {
+    width: 10em; 
+    height: 10em;
+    padding: 1rem 0 1rem 0;
+}
+
+.card_icon_buttons {
+    display: flex;
+    padding: 0.2rem;
+    width: 3rem; 
+    height: 3rem;
+}
+
+@media only screen and (max-width: 700px) {
+    .card {
+        flex-basis: 6rem;
+        padding: 0.6rem;
+        margin: 0.4rem;
+        border: solid 2px black;
+        border-radius: 0.4rem;
+    }
+
+    .card_image {
+        width: 6rem; 
+        height: 6rem;
+        padding: 0.6rem 0 0.6rem 0;
+    }
+
+    .favorite {
+        border: solid 2px goldenrod;
+    }
+  }
+
+.popover_form {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: whitesmoke;
+    border: 1px solid black;
+    border-radius: 0.4rem;
+}
+
+.popover_form > form {
+    display: flex;
+    flex-direction: column;
+    padding: 1.2rem 2rem 1.2rem 2rem;
+}
