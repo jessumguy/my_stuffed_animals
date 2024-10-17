@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stuffed Animal Collection</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Stuffed Animal Collection</h1>
+        <nav>
+            <a href="https://github.com/jessumguy">My Github</a>
+        </nav>
+    </header>
+    <main>
+        <section id="main_button_section">
+            <button type="button" class="button add_form" data-popover="true">Add</button>
+        </section>
+        <section>
+            <div class="popover_form">
+                <form>
+                    <div class="form_buttons top">
+                        <button type="button" class="button close_form">Close</button>
+                    </div>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Standing Cat" required>
+                    <label for="type">Type:</label>
+                    <select id="type" name="type" class="dropdown" placeholder="cat" value="cat" required>
+                        <!-- <option disabled selected></option> -->
+                    </select>
+                    <label for="age">Age:</label>
+                    <input type="number" id="age" name="age" placeholder="5" required>
+                    <label for="color">Color:</label>
+                    <input type="text" id="color" name="color" placeholder="" required>
+                    <button class="button submit_form" type="submit" >Submit</button>
+                </form>
+            </div>
+        </section>
+        <section id="card_section">
+        </section>        
+    </main>
+    
+    <script src="script.js"></script>
+</body>
+</html>
